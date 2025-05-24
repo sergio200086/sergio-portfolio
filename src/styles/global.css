@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html{
+  color: white;
+  background: #13151a;
+}
+
+body {
+  @apply grid place-content-center p-20;
+}
+
+body > div {
+  @apply container;
+}
