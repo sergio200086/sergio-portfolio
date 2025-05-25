@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: light dark;
+}
+
 html{
-  color: white;
-  background: #13151a;
+  background: #050505;
 }
 
 body {
-  @apply grid place-content-center p-20;
+  @apply grid place-content-center p-5;
 }
 
 body > div {
