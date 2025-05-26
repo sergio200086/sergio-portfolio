@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import GitHubIcon from "../icons/GitHub.astro";
+import Social from "../components/Social.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,7 +12,7 @@ import Badge from "../components/Badge.astro";
 
 <Layout>
   <main>
-    <section class="flex flex-col items-left py-44">
+    <section class="lg:w-[740px] mx-auto py-44">
       <img
         src="https://media.licdn.com/dms/image/v2/D4E03AQFOMxaFmtrkHw/profile-displayphoto-shrink_800_800/B4EZQfLVyGHAAc-/0/1735689854432?e=1753315200&v=beta&t=skbTisOJCviFXHjiEcclwCKnYn0v0NK8DIh38cDMlVM"
         alt="sergio photo"
@@ -21,22 +24,25 @@ import Badge from "../components/Badge.astro";
           href="https://www.linkedin.com/in/sergio-suarez-gonzalez-975b91207/"
           target="_blank"
           rel="noopener"
-          class="flex justify-center items-center"
-          ><Badge>Available to work</Badge></a
-        >
+          class="flex justify-center items-center"></a>
         <br />
       </h1>
-      <h2 class="text-2xl opacity-80">
-        Telecommunications Engineer and Web developer.
+      <h2 class="text-2xl opacity-80 mb-4">
+        Telecommunications Engineer and Web developer. <br /> +2 years of experience.
+        From Bogotá, Colombia. Web developer especialized.
       </h2>
-      <h2 class="text-2xl opacity-80">
-        +2 years of experience. From Bogotá, Colombia 🇨🇴. Web developer
-        especialized.
-      </h2>
-
-      <ul>
-        <li><a href="https://github.com/sergio200086">GitHub</a></li>
-      </ul>
+      <nav class="flex gap-x-4">
+        <Social
+          href="https://www.linkedin.com/in/sergio-suarez-gonzalez-975b91207/"
+        >
+          <LinkedInIcon class="w-7 h-7" />
+          LinkedIn
+        </Social>
+        <Social href="https://github.com/sergio200086">
+          <GitHubIcon class="w-7 h-7" />
+          GitHub
+        </Social>
+      </nav>
     </section>
   </main>
 </Layout>

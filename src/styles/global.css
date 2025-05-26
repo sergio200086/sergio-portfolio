@@ -12,6 +12,3 @@ body {
   @apply grid place-content-center p-5;
 }
 
-body > div {
-  @apply container;
-}
