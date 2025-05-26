@@ -1,0 +1,34 @@
+---
+const EXPERIENCE = [
+  {
+    title: "Engineer - Tata Consultancy Services (DANE)",
+    date: "January 1st, 2025 - April 30th, 2025",
+    description:
+      "Handle ticket escalation and follow-up, while reviewing and analyzing new cases on the iON platform to support issue resolution and case processing. Collaborate with the offshore team in India to ensure timely resolution of issues and effective communication with the onshore team in Colombia.",
+  },
+  {
+    title: "C# Developer - Tata Consultancy Services (CityBank)",
+    date: "October 15th, 2024 - December 30th, 2024",
+    description:
+      "Developed and maintained C# unit tests for a banking application. Collaborated with a team of developers to increase code coverage by 90% and improve application reliability.",
+  },
+  {
+    title: "System developer - Skyline Communications",
+    date: "July, 2022 - September, 2024",
+    description:
+      "Design and implementation of .Net driven applications for network monitoring using C#. Improving data relaiability and performance by 50% through optimization of data capturing.",
+  },
+];
+
+import ExperienceItem from "./ExperienceItem.astro";
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 mt-10">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-6">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

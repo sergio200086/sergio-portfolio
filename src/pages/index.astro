@@ -6,6 +6,9 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
 import GitHubIcon from "../icons/GitHub.astro";
 import MailIcon from "../icons/Mail.astro";
 import Social from "../components/Social.astro";
+import Experience from "../components/Experience.astro";
+import ExperienceIcon from "../icons/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,7 +16,7 @@ import Social from "../components/Social.astro";
 
 <Layout>
   <main>
-    <section class="text-white lg:w-[740px] mx-auto py-44">
+    <SectionContainer class="py-44 pb-24">
       <img
         src="https://media.licdn.com/dms/image/v2/D4E03AQFOMxaFmtrkHw/profile-displayphoto-shrink_800_800/B4EZQfLVyGHAAc-/0/1735689854432?e=1753315200&v=beta&t=skbTisOJCviFXHjiEcclwCKnYn0v0NK8DIh38cDMlVM"
         alt="sergio photo"
@@ -43,11 +46,19 @@ import Social from "../components/Social.astro";
           <GitHubIcon class="w-7 h-7" />
           GitHub
         </Social>
-        <Social href="https://github.com/sergio200086">
+        <Social href="mailto:suarezsergio040@gmail.com">
           <MailIcon class="w-7 h-7" />
           suarezsergio040@gmail.com
         </Social>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer>
+      <h2 class="flex text-2xl font-semibold gap-x-2 items-center mb-4">
+        <ExperienceIcon class="size-6" />
+        Experience
+      </h2>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>
