@@ -1,0 +1,30 @@
+---
+const PROJECTS = [
+  {
+    title: "Vote Application for Santo Tomás University",
+    description:
+      "A vote application for the Santo Tomás University students. In order to choose the representatnt of each faculty.",
+    link: "",
+    github: "",
+    image: "/projects/vote.jpg",
+    tags: ["JavaScript", "Vite", "Node", "Fastify", "MongoDB"],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags }) => (
+    <article>
+      <h1 class="text-xl font-semibold">{title}</h1>
+      <p>{description}</p>
+      <ul>
+        {tags.map((tag) => (
+          <li class="inline-block bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">
+            {tag}
+          </li>
+        ))}
+      </ul>
+      <img src={image} alt="Project screenshot" />
+    </article>
+  ))
+}
