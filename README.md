@@ -54,6 +54,8 @@ A voting system for university students to select faculty representatives.
 
 This project is open source and available under the [MIT License](LICENSE).
 
+
+
 ---
 
 Built with ❤️ by Sergio
